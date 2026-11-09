@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Reading Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Luyện Đọc Tiếng Anh Mỗi Ngày</h1>
+        <p>Chọn bài đọc bên dưới và rèn luyện kỹ năng đọc hiểu của bạn.</p>
+    </header>
+
+    <main class="container">
+        <!-- Sidebar chọn bài học -->
+        <aside class="sidebar">
+            <h3>Danh sách bài đọc</h3>
+            <ul id="article-list">
+                <!-- Các bài đọc sẽ được thêm bằng JavaScript hoặc HTML tĩnh -->
+                <li onclick="loadArticle(0)" class="active">1. The Benefits of Reading</li>
+                <li onclick="loadArticle(1)">2. Habits of Successful People</li>
+            </ul>
+        </aside>
+
+        <!-- Nội dung bài đọc chính -->
+        <section class="content-area">
+            <h2 id="article-title">Title</h2>
+            <div id="article-body" class="reading-text">
+                <!-- Nội dung bài đọc hiển thị ở đây -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 English Reader App. Powered by Netlify.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
